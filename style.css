@@ -1,65 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
-/* Apply Urbanist font to almost everything */
+/* Apply Urbanist font */
 html, body, [class*="css"] {
-    font-family: 'Urbanist', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-family: 'Urbanist', ui-sans-serif, system-ui, -apple-system, sans-serif !important;
 }
 
-/* Apply ProFontWindows substitute (Roboto Mono) to code blocks */
 code, pre {
     font-family: 'Roboto Mono', monospace !important;
 }
 
-/* Buttons styling to match DESIGN.md (Pill shape) */
-button[kind="primary"] {
-    border-radius: 100px !important;
-    padding: 8px 26px !important;
-    font-weight: 700 !important;
+/* Base App Backgrounds */
+.stApp {
+    background-color: #f5efe6 !important; /* Canvas Beige */
+    color: #2d2a24 !important; /* Deep Mocha */
 }
 
-button[kind="secondary"] {
-    border-radius: 100px !important;
-    padding: 8px 16px !important;
-    font-weight: 500 !important;
-    border: 1px solid #e9ded0 !important;
-    color: #2d2a24 !important;
-    background-color: transparent !important;
-}
-
-button[kind="secondary"]:hover {
-    border: 1px solid #ff8400 !important;
-    color: #ff8400 !important;
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #e9ded0 !important; /* Mid-Tone Beige */
+    border-right: 1px solid #dfd2bf !important;
 }
 
 /* Headers typography */
 h1 {
     font-weight: 900 !important;
     letter-spacing: 0.37px !important;
+    font-size: 3rem !important;
+    color: #2d2a24 !important;
 }
-h2, h3 {
+h2 {
     font-weight: 800 !important;
     letter-spacing: 0.32px !important;
+    color: #2d2a24 !important;
+    margin-top: 1.5rem !important;
+}
+h3 {
+    font-weight: 800 !important;
+    color: #5f5646 !important; /* Muted Stone */
 }
 
-/* Subtle card styling for expanders */
+/* Typography for paragraph */
+p {
+    color: #5f5646 !important; /* Muted Stone */
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Bold text */
+b, strong {
+    color: #2d2a24 !important;
+    font-weight: 800 !important;
+}
+
+/* Buttons (Pill Shape) */
+button[kind="primary"] {
+    border-radius: 100px !important;
+    padding: 10px 26px !important;
+    font-weight: 700 !important;
+    background-color: #ff8400 !important; /* Vibrant Orange */
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(255, 132, 0, 0.3) !important;
+    transition: all 0.2s ease !important;
+}
+button[kind="primary"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(255, 132, 0, 0.4) !important;
+}
+
+button[kind="secondary"] {
+    border-radius: 100px !important;
+    padding: 10px 20px !important;
+    font-weight: 700 !important;
+    border: 2px solid #e9ded0 !important;
+    color: #2d2a24 !important;
+    background-color: transparent !important;
+    transition: all 0.2s ease !important;
+}
+button[kind="secondary"]:hover {
+    border-color: #ff8400 !important;
+    color: #ff8400 !important;
+}
+
+/* Metrics Cards (Feature Cards from DESIGN.md) */
+[data-testid="stMetric"] {
+    background-color: #e9ded0 !important;
+    border-radius: 16px !important;
+    padding: 16px !important;
+    border: 1px solid #dfd2bf !important;
+}
+[data-testid="stMetricLabel"] {
+    font-weight: 700 !important;
+    color: #5f5646 !important;
+}
+[data-testid="stMetricValue"] {
+    font-weight: 900 !important;
+    color: #2d2a24 !important;
+    font-size: 2rem !important;
+}
+
+/* Expanders */
 .streamlit-expanderHeader {
     border-radius: 16px !important;
     background-color: #e9ded0 !important;
     border: none !important;
+    font-weight: 700 !important;
+    color: #2d2a24 !important;
 }
 .streamlit-expanderContent {
     border: 1px solid #e9ded0 !important;
     border-top: none !important;
     border-bottom-left-radius: 16px !important;
     border-bottom-right-radius: 16px !important;
+    background-color: #ffffff !important;
 }
 
-/* Accent Tag imitation (e.g. for small text) */
+/* Sliders */
+.stSlider div[data-baseweb="slider"] > div:nth-child(1) {
+    background: #dfd2bf !important;
+}
+.stSlider div[data-baseweb="slider"] div[role="slider"] {
+    background-color: #ff8400 !important;
+    border: 2px solid #ffffff !important;
+    box-shadow: 0 2px 8px rgba(255, 132, 0, 0.4) !important;
+}
+
+/* Accent Tags */
 .stMarkdown p small {
     display: inline-block;
-    border: 3px solid #34bfff;
+    border: 2px solid #34bfff; /* Electric Blue */
     border-radius: 12px;
-    padding: 2px 8px;
-    font-weight: 700;
+    padding: 4px 12px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: #2d2a24;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
 }

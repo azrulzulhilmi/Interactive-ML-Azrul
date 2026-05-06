@@ -24,7 +24,7 @@ np.random.seed(42)
 X = np.random.rand(n_samples, 1) * 10
 y = 2.5 * X.squeeze() + 10.0 + np.random.randn(n_samples) * noise
 # Add outlier
-X = np.append(X, [[9.5]])
+X = np.append(X, [[9.5]], axis=0)
 y = np.append(y, [150.0])
 X_plot = np.linspace(0, 10, 100)[:, np.newaxis]
 
