@@ -5,6 +5,8 @@ from sklearn.datasets import make_classification
 from sklearn.manifold import TSNE
 
 st.set_page_config(page_title="t-SNE", page_icon="🕸️", layout="wide")
+from utils import load_css
+load_css()
 st.title("🕸️ t-SNE")
 st.markdown("""
 **t-SNE** (t-Distributed Stochastic Neighbor Embedding) is a non-linear dimensionality reduction technique particularly well suited for visualizing high-dimensional datasets.

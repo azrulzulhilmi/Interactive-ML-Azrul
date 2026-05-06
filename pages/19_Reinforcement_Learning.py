@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Reinforcement Learning", page_icon="🤖", layout="wide")
+from utils import load_css
+load_css()
 st.title("🤖 Reinforcement Learning (Q-Learning)")
 st.markdown("""
 **Reinforcement Learning** involves an agent learning to make decisions by taking actions in an environment to maximize a cumulative reward.

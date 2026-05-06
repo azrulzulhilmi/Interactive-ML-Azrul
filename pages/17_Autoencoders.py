@@ -6,6 +6,8 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Dense
 
 st.set_page_config(page_title="Autoencoders", page_icon="🪞", layout="wide")
+from utils import load_css
+load_css()
 st.title("🪞 Autoencoders")
 st.markdown("""
 An **Autoencoder** is a type of artificial neural network used to learn efficient codings of unlabeled data. 

@@ -5,6 +5,8 @@ from sklearn.datasets import make_moons
 from sklearn.cluster import DBSCAN
 
 st.set_page_config(page_title="DBSCAN", page_icon="🌌", layout="wide")
+from utils import load_css
+load_css()
 st.title("🌌 DBSCAN")
 st.markdown("""
 **DBSCAN** (Density-Based Spatial Clustering of Applications with Noise) groups together points that are closely packed together (points with many nearby neighbors).

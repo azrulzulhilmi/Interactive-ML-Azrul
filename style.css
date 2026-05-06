@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+/* Apply Urbanist font to almost everything */
+html, body, [class*="css"] {
+    font-family: 'Urbanist', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* Apply ProFontWindows substitute (Roboto Mono) to code blocks */
+code, pre {
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+/* Buttons styling to match DESIGN.md (Pill shape) */
+button[kind="primary"] {
+    border-radius: 100px !important;
+    padding: 8px 26px !important;
+    font-weight: 700 !important;
+}
+
+button[kind="secondary"] {
+    border-radius: 100px !important;
+    padding: 8px 16px !important;
+    font-weight: 500 !important;
+    border: 1px solid #e9ded0 !important;
+    color: #2d2a24 !important;
+    background-color: transparent !important;
+}
+
+button[kind="secondary"]:hover {
+    border: 1px solid #ff8400 !important;
+    color: #ff8400 !important;
+}
+
+/* Headers typography */
+h1 {
+    font-weight: 900 !important;
+    letter-spacing: 0.37px !important;
+}
+h2, h3 {
+    font-weight: 800 !important;
+    letter-spacing: 0.32px !important;
+}
+
+/* Subtle card styling for expanders */
+.streamlit-expanderHeader {
+    border-radius: 16px !important;
+    background-color: #e9ded0 !important;
+    border: none !important;
+}
+.streamlit-expanderContent {
+    border: 1px solid #e9ded0 !important;
+    border-top: none !important;
+    border-bottom-left-radius: 16px !important;
+    border-bottom-right-radius: 16px !important;
+}
+
+/* Accent Tag imitation (e.g. for small text) */
+.stMarkdown p small {
+    display: inline-block;
+    border: 3px solid #34bfff;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-weight: 700;
+}

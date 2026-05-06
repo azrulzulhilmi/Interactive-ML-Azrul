@@ -6,6 +6,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.inspection import DecisionBoundaryDisplay
 
 st.set_page_config(page_title="Logistic Regression", page_icon="S", layout="wide")
+from utils import load_css
+load_css()
 st.title("Logistic Regression")
 st.markdown("""
 Despite its name, **Logistic Regression** is a *classification* algorithm. It predicts the probability that an instance belongs to a given class. If the probability is > 50%, it assigns the instance to the positive class.

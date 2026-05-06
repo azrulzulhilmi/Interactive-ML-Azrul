@@ -6,6 +6,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.inspection import DecisionBoundaryDisplay
 
 st.set_page_config(page_title="Random Forests", page_icon="🌲", layout="wide")
+from utils import load_css
+load_css()
 st.title("🌲 Random Forests")
 st.markdown("""
 **Random Forests** combine the predictions of multiple Decision Trees. Each tree is trained on a random subset of the data and a random subset of features. 

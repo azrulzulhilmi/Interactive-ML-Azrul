@@ -5,6 +5,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
 st.set_page_config(page_title="Linear Regression", page_icon="📈", layout="wide")
+from utils import load_css
+load_css()
 
 st.title("📈 Linear Regression")
 

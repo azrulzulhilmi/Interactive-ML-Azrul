@@ -6,6 +6,8 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+from utils import load_css
+load_css()
 
 st.title("Welcome to the Interactive Machine Learning Playground! 🧠")
 

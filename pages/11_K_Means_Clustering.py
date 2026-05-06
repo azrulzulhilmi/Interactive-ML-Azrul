@@ -5,6 +5,8 @@ from sklearn.datasets import make_blobs
 from sklearn.cluster import KMeans
 
 st.set_page_config(page_title="K-Means Clustering", page_icon="🎯", layout="wide")
+from utils import load_css
+load_css()
 st.title("🎯 K-Means Clustering")
 st.markdown("""
 **K-Means Clustering** is an unsupervised learning algorithm that groups unlabelled data into a pre-defined number of clusters (`k`). 

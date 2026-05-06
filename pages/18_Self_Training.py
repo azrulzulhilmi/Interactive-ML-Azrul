@@ -7,6 +7,8 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 
 st.set_page_config(page_title="Self Training", page_icon="🧑‍🏫", layout="wide")
+from utils import load_css
+load_css()
 st.title("🧑‍🏫 Self Training (Semi-Supervised)")
 st.markdown("""
 **Self-Training** is a semi-supervised learning algorithm. It starts by training a model on a small amount of labeled data. 

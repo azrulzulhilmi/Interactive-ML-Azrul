@@ -6,6 +6,8 @@ from sklearn.svm import SVC
 from sklearn.inspection import DecisionBoundaryDisplay
 
 st.set_page_config(page_title="Support Vector Machines", page_icon="⚔️", layout="wide")
+from utils import load_css
+load_css()
 st.title("⚔️ Support Vector Machines (SVM)")
 st.markdown("""
 **Support Vector Machines** find the hyperplane that maximizes the margin (distance) between different classes. 

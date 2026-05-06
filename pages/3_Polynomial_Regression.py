@@ -7,6 +7,8 @@ from sklearn.pipeline import make_pipeline
 from sklearn.metrics import mean_squared_error
 
 st.set_page_config(page_title="Polynomial Regression", page_icon="📈", layout="wide")
+from utils import load_css
+load_css()
 st.title("📈 Polynomial Regression")
 st.markdown("""
 **Polynomial Regression** extends linear regression by adding extra predictors obtained by raising the original features to a given power (degree). This allows the model to fit non-linear, curved relationships. 

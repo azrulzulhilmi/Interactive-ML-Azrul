@@ -6,6 +6,8 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.inspection import DecisionBoundaryDisplay
 
 st.set_page_config(page_title="Gradient Boosting", page_icon="🚀", layout="wide")
+from utils import load_css
+load_css()
 st.title("🚀 Gradient Boosting")
 st.markdown("""
 Unlike Random Forests which build trees independently, **Gradient Boosting** builds trees sequentially. 

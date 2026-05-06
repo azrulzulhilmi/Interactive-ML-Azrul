@@ -6,6 +6,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.inspection import DecisionBoundaryDisplay
 
 st.set_page_config(page_title="K-Nearest Neighbors", page_icon="📍", layout="wide")
+from utils import load_css
+load_css()
 st.title("📍 K-Nearest Neighbors (KNN)")
 st.markdown("""
 **K-Nearest Neighbors** is a simple, intuitive algorithm that classifies a new data point based on the majority class of its 'K' closest neighbors in the training data.

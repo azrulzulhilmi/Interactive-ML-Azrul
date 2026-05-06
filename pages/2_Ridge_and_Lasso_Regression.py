@@ -5,6 +5,8 @@ from sklearn.linear_model import Ridge, Lasso, LinearRegression
 from sklearn.metrics import mean_squared_error
 
 st.set_page_config(page_title="Ridge & Lasso Regression", page_icon="🔗", layout="wide")
+from utils import load_css
+load_css()
 st.title("🔗 Ridge & Lasso Regression")
 st.markdown("""
 **Ridge** and **Lasso** regression are regularization techniques used to prevent overfitting in linear regression by adding a penalty to the model's complexity.

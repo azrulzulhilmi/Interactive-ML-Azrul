@@ -6,6 +6,8 @@ from sklearn.cluster import AgglomerativeClustering
 from scipy.cluster.hierarchy import dendrogram, linkage
 
 st.set_page_config(page_title="Hierarchical Clustering", page_icon="🧬", layout="wide")
+from utils import load_css
+load_css()
 st.title("🧬 Hierarchical Clustering")
 st.markdown("""
 **Hierarchical Clustering** groups data by building a hierarchy of clusters. 

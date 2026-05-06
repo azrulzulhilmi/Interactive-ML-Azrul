@@ -5,6 +5,8 @@ from sklearn.ensemble import IsolationForest
 from sklearn.datasets import make_blobs
 
 st.set_page_config(page_title="Anomaly Detection", page_icon="🕵️", layout="wide")
+from utils import load_css
+load_css()
 st.title("🕵️ Anomaly Detection (Isolation Forest)")
 st.markdown("""
 **Isolation Forests** are used for Anomaly Detection. They "isolate" observations by randomly selecting a feature and randomly selecting a split value between the max and min values of that feature.

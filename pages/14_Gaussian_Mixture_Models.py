@@ -5,6 +5,8 @@ from sklearn.datasets import make_blobs
 from sklearn.mixture import GaussianMixture
 
 st.set_page_config(page_title="Gaussian Mixture Models", page_icon="☁️", layout="wide")
+from utils import load_css
+load_css()
 st.title("☁️ Gaussian Mixture Models (GMM)")
 st.markdown("""
 A **Gaussian Mixture Model** assumes that the data is generated from a mixture of a finite number of Gaussian (normal) distributions with unknown parameters.

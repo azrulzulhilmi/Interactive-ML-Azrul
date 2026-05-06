@@ -6,6 +6,8 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.inspection import DecisionBoundaryDisplay
 
 st.set_page_config(page_title="Decision Trees", page_icon="🌳", layout="wide")
+from utils import load_css
+load_css()
 st.title("🌳 Decision Trees")
 st.markdown("""
 A **Decision Tree** continuously splits the data into two branches based on the feature that provides the best separation, eventually ending in 'leaf' nodes that dictate the class.

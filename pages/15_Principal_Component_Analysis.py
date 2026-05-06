@@ -5,6 +5,8 @@ from sklearn.datasets import make_classification
 from sklearn.decomposition import PCA
 
 st.set_page_config(page_title="Principal Component Analysis", page_icon="📉", layout="wide")
+from utils import load_css
+load_css()
 st.title("📉 Principal Component Analysis (PCA)")
 st.markdown("""
 **PCA** is a dimensionality reduction technique. It transforms high-dimensional data into a lower-dimensional space while retaining as much variance (information) as possible.

@@ -6,6 +6,8 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.inspection import DecisionBoundaryDisplay
 
 st.set_page_config(page_title="Naive Bayes", page_icon="📊", layout="wide")
+from utils import load_css
+load_css()
 st.title("📊 Naive Bayes")
 st.markdown("""
 **Naive Bayes** is a probabilistic classifier based on applying Bayes' theorem. It assumes that all features are independent of each other (the "naive" assumption).
